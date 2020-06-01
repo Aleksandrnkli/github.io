@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Главное окно</title>
+  </head>
+  <body>
+    <div class="main not-hidden">
+      <div class="head"><h4>Главное окно</h4></div>
+      <div class="search-form">
+        <input type="submit" value="" />
+        <input type="search" placeholder="Поиск" />
+      </div>
+      <div class="buttons">
+        <button class="add-button">Добавить</button>
+        <button class="edit-button">Редактировать</button>
+        <button class="delete-button">Удалить</button>
+      </div>
+      <div class="table-container">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Превью</th>
+              <th>Имя</th>
+              <th>Фамилия</th>
+              <th>Дата Рождения</th>
+              <th>Возраст</th>
+              <th>Должность</th>
+              <th>Удаленная работы</th>
+              <th class="last">Адрес проживания</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_1" />
+                <label for="checkbox_1"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_2" />
+                <label for="checkbox_2"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_3" />
+                <label for="checkbox_3"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_4" />
+                <label for="checkbox_4"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_5" />
+                <label for="checkbox_5"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_6" />
+                <label for="checkbox_6"> </label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+            <tr>
+              <td><img class="avatar" src="ava.jpg" /></td>
+              <td>Александр</td>
+              <td>Климовских</td>
+              <td>04.02.1997</td>
+              <td>23</td>
+              <td>Стажер-переднеконечник</td>
+              <td class="checkbox">
+                <input type="checkbox" id="checkbox_7" />
+                <label for="checkbox_7"></label>
+              </td>
+              <td class="last">г.Самара ул.Переднеконечная д.UTF-8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer-div"></div>
+    </div>
+    <div class="modal-form closed">
+      <div class="head">Добавление/Редактирование</div>
+      <div class="form-top">
+        <img class="ava-form" src="photo.png" />
+      </div>
+      <div class="form-bottom">
+        <p>О себе</p>
+        <textarea
+          maxlength="300"
+          placeholder="Введите текст о себе...(до 300 символов)"
+        ></textarea>
+        <p>Интересы и увлечения</p>
+        <textarea
+          maxlength="300"
+          placeholder="Введите текст о своих интересах и увлечениях...(до 300 символов)"
+        ></textarea>
+      </div>
+      <div class="buttons-form">
+        <button class="save-button">Сохранить</button>
+        <button class="cancel-button">Назад</button>
+      </div>
+      <div class="footer-div"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
